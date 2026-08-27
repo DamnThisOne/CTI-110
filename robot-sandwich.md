@@ -19,4 +19,4 @@
 8. Pick up the unjellied bread 
 9. Set the unjellied bread on top of the jellied bread
 10. Screw the lid of the jelly jar back onto the uncovered jelly jar .
-11. Pick up the jelly sandwich and hand it to me .
+11. Pick up the jelly sandwich and hand it to me . 
