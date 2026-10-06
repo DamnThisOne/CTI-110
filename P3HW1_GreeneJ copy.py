@@ -29,3 +29,18 @@ print(f'{"Highest grade:":<20} {High:.1f}')
 print(f'{"Sum of grades":<20} {sum(gradeList):.1f}')
 print(f'{"Grade average:":<20} {avgScore:.2f}')
 print("--------------------------------------")
+
+if avgScore >= 90:
+    print("Grade: A")
+
+if avgScore >= 80 and avgScore <= 89:
+    print("Grade: B")
+
+if avgScore >= 70 and avgScore <= 79:
+    print("Grade: C")
+
+if avgScore >= 60 and avgScore <= 69:
+    print("Grade: D")
+
+if avgScore <= 59:
+    print("Grade: F")
