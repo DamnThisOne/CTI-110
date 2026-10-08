@@ -3,6 +3,7 @@ J Greene
 24.09.26
 Using a dictionary to determine cars mpg.
 '''
+print(10/4)
 
 garage = {"Camaro":18.21, "Prius":52.36, "Model S":110, "Silverado":26}
 

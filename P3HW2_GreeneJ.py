@@ -31,3 +31,4 @@ st.write(f"Overtime pay: ${OT_Pay:.2f}")
 st.write(f"Regular pay: ${reg_pay:.2f}")
 st.write(f"-----------------------------------------------")
 st.write(f"Gross pay: ${PayDay:.2f}")
+
