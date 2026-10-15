@@ -8,9 +8,9 @@ bill = Mon_Int // 100
 remain_Mon = Mon_Int % 100
 print("Dollars", bill)
 
-quarts = remain_Mon // 25
+quarters = remain_Mon // 25
 remain_Mon = remain_Mon % 25
-print("Quarters", quarts)
+print("Quarters", quarters)
 
 dimes = remain_Mon // 10
 remain_Mon = remain_Mon % 10
@@ -20,7 +20,22 @@ nickles = remain_Mon // 5
 remain_Mon = remain_Mon % 5
 print("Nickles", nickles)
 
-penny = remain_Mon // 1
+pennies = remain_Mon // 1
 remain_Mon = remain_Mon % 1
-print("Pennies", penny)
+print("Pennies", pennies)
+
+print()
+
+def MoneySpread(coin, cointype):
+    if coin > 0:
+        if coin == 1:
+            print(f"1 {cointype}")
+        if coin > 1:
+            print(f"{coin} {cointype}s")
+            
+MoneySpread(bill, "dollar")
+MoneySpread(quarters,"quarter")
+MoneySpread(dimes,"dime")
+MoneySpread(nickles, "nickle")
+MoneySpread(pennies, "penny")
 
