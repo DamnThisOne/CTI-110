@@ -1,4 +1,22 @@
-'''for Gay in range(1,11,2):
-    print(Gay)'''
+# p4lab1 10/22/26
+# uughhhh ughhuhguhuhuh   im really bored  i dont think i took my meds today lol
+
+import turtle
+
+window = turtle.Screen()
+
+baba = turtle.Turtle()
+
+baba.pensize(7)
+baba.pencolor("red")
+
+for sq in range(4):
+    baba.forward(100)
+    baba.right(90)
+
+tri = 0
+while tri < 3:
+    tri = tri+1
     
-friends = ["Arsehole","Bully","Gay"]
+
+window.mainloop()
