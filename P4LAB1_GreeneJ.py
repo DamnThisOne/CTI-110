@@ -15,8 +15,10 @@ for sq in range(4):
     baba.right(90)
 
 tri = 0
+
 while tri < 3:
     tri = tri+1
-    
+    baba.forward(100)
+    baba.left(120)
 
 window.mainloop()
