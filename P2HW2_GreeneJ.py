@@ -2,30 +2,46 @@
 '30/09/26'
 'P2HW2'
 ''
-print()
-Mod1= input("Enter grade for Module 1: ")
-Mod2= input("Enter grade for Module 2: ")
-Mod3= input("Enter grade for Module 3: ")
-Mod4= input("Enter grade for Module 4: ")
-Mod5= input("Enter grade for Module 5: ")
-Mod6= input("Enter grade for Module 6: ")
+ScoreAmnt= int(input("How many scores do you want to enter? "))
 
-Mod1= float(Mod1)
-Mod2= float(Mod2)
-Mod3= float(Mod3)
-Mod4= float(Mod4)
-Mod5= float(Mod5)
-Mod6= float(Mod6)
+scores = []
 
-gradeList =[Mod1,Mod2,Mod3,Mod4,Mod5,Mod6]
-avgScore = sum(gradeList)/len(gradeList)
-Low = min(gradeList)
-High = max(gradeList)
+for num in range(1,ScoreAmnt+1):
+    score = float(input(f"Enter score #{num}: "))
+    
+    while score > 100 or score < 0:
+        print("Invalid score entered || Score should be between 0 and 100")
+        score = float(input(f"Enter score #{num} in a valid format: "))
+    scores.append(score)
+
+
+avgScore = sum(scores)/len(scores)
+Low = min(scores)
+High = max(scores)
+scores.remove(Low)
+
+Grade = "Grade Error"
+
+if avgScore >= 90:
+    Grade = "A"
+
+if avgScore >= 80 and avgScore <= 89:
+    Grade = "B"
+
+if avgScore >= 70 and avgScore <= 79:
+    Grade = "C"
+
+if avgScore >= 60 and avgScore <= 69:
+    Grade = "D"
+
+if avgScore <= 59:
+    Grade = "F"
+    
 print()
 
 print("---------------Results----------------")
-print(f'{"Lowest grade:":<20} {Low:.1f}')
-print(f'{"Highest grade:":<20} {High:.1f}')
-print(f'{"Sum of grades":<20} {sum(gradeList):.1f}')
-print(f'{"Grade average:":<20} {avgScore:.2f}')
+print(f'{"Lowest grade":<15}: {Low:.1f}')
+print(f'{"Modified list":<15}: {scores}')
+print(f'{"Grade average":<15}: {avgScore:.2f}')
+print(f'{"Grade":<15}: {Grade}')
 print("--------------------------------------")
