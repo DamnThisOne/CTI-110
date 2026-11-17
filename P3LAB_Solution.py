@@ -2,16 +2,13 @@
 #Date
 #P3LAB
 #Using integer division and if/else statements
-
+import random
 #Get float input from the user
 change = float(input("Enter an amount of money as a float: "))
 
 #Convert the float value into an integer
 change = int(change * 100)
 
-print(change)
-
-    
 if change == 0:
     print("No Change Due")
 
@@ -68,12 +65,17 @@ if num_pennies > 0:
         print("Penny")
     else:
         print("Pennies")
-
+print()
 
 
 def main():
     print("Welcome to the self-checkout station .")
+    amount_due = random.uniform(0.01, 100.0)
+    print(f"Amount due: ${amount_due:.2f}")
     
+    cash_in = float(input("How much monney do you want to enter?: $"))
+    
+    change = cash_in - amount_due
     
 if __name__ == "__main__":
     main()
